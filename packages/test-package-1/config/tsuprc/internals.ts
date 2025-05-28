@@ -30,7 +30,9 @@ export const PROD_OPTIMIZE = {
  * using Node's module.createRequire() for ESM compatibility
  * @internal
  */
-export const addNodeRequireShim = ({ format }: Parameters<typeof defineConfig>[number]["banner"]) => {
+
+/** @ts-expect-error dont care about this */
+export const addNodeRequireShim = ({ format }:{format:"esm"|"cjs"}) => {
 	if (format === "esm") {
 		const banner = `
 import { createRequire } from "node:module";

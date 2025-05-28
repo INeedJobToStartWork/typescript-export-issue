@@ -1,0 +1,44 @@
+{
+	"$schema": "http://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"lib": ["esnext", "dom"],
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"target": "ES6",
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"alwaysStrict": false,
+		"exactOptionalPropertyTypes": false,
+		"noFallthroughCasesInSwitch": false,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"resolveJsonModule": true,
+
+		"jsx": "react",
+		"outDir": "./dist",
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["*", "*/index.ts", "*.ts"]
+		},
+		"stripInternal": true,
+		// "plugins": [
+		// 	{
+		// 		"transform": "typia/lib/transform"
+		// 	}
+		// ],
+		"preserveSymlinks": true,
+		"strict": true
+	},
+	"extends": "@ineedj/tsconfig/base.json",
+	"display": "default",
+	"exclude": ["node_modules", "dist", "lib"]
+}

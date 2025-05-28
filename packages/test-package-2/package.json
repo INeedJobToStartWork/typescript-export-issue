@@ -1,0 +1,28 @@
+{
+	"name": "@packages/test-package-2",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"main": "./src/index.ts",
+	"scripts": {
+		"------------------------BUILDS-------------------------": "",
+		"build:tsc": "pnpm tsc",
+		"build:dev": "pnpm tsup --config ./config/tsuprc/tsup.dev.ts",
+		"build:prod": "pnpm tsup --config ./config/tsuprc/tsup.prod.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.3",
+		"esbuild-plugin-copy": "^2.1.1",
+		"tsup": "^8.3.5",
+		"typescript": "^5.6.3"
+	},
+	"dependencies": {
+		"@packages/test-package-1":"workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"directory": "dist",
+		"provenance": true,
+		"tag": "latest"
+	}
+}

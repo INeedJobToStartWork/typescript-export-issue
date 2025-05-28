@@ -13,6 +13,9 @@
     },
     "bench": {},
     "build": {},
+    "build:tsc": {
+      "outputs": ["dist/**"]
+    },
     "build:dev": {
       "outputs": ["dist/**"]
     },

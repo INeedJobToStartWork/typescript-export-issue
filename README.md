@@ -18,4 +18,4 @@ When `test-package-1` export it as:
 
 ## FAQ
 ### It's working for me.
-- Check it's true - If you have `dist` dir at `test-package-1` there is no problem because `turborepo` is copy that to `node_modules/@packages/test-package-2` instead using symlink, so delete that.
+- Check if it's true - If you have `dist` dir at `test-package-1` there is no problem because `turborepo` is copy that to `node_modules/@packages/test-package-2` instead using symlink, so delete that.
